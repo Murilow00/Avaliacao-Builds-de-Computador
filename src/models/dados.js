@@ -8,7 +8,11 @@ const builds = [
       armazenamento: "2TB NVMe Gen4 SSD",
       preco: 18500,
       categoria: "Gamer Extremo",
-      desempenho: "Absoluto"
+      desempenho: "Absoluto",
+      ValorProcessador: 250,
+      valorPlacaVideo: 250,
+      valorTotalRam:9000,
+      valorTotalArmazenamento:9000
     },
     {
       id: 2,
@@ -19,7 +23,11 @@ const builds = [
       armazenamento: "2TB NVMe SSD + 8TB HDD",
       preco: 13200,
       categoria: "Produtividade/Edição",
-      desempenho: "Profissional"
+      desempenho: "Profissional",
+      ValorProcessador: 6500,
+      valorPlacaVideo: 6500,
+      valorTotalRam:100,
+      valorTotalArmazenamento:100
     },
     {
       id: 3,
@@ -30,7 +38,11 @@ const builds = [
       armazenamento: "1TB NVMe SSD",
       preco: 4800,
       categoria: "Gamer Básico",
-      desempenho: "Bom"
+      desempenho: "Bom",
+      ValorProcessador: 2000,
+      valorPlacaVideo: 2000,
+      valorTotalRam:400,
+      valorTotalArmazenamento:400
     },
     {
       id: 4,
@@ -41,7 +53,11 @@ const builds = [
       armazenamento: "1TB NVMe SSD",
       preco: 8900,
       categoria: "Design",
-      desempenho: "Alto"
+      desempenho: "Alto",
+      ValorProcessador: 4000,
+      valorPlacaVideo: 4000,
+      valorTotalRam: 450,
+      valorTotalArmazenamento: 450
     },
     {
       id: 5,
@@ -52,7 +68,11 @@ const builds = [
       armazenamento: "512GB NVMe SSD",
       preco: 3200,
       categoria: "Home Office/Estudo",
-      desempenho: "Básico"
+      desempenho: "Básico",
+      ValorProcessador: 1000 ,
+      valorPlacaVideo: 1000,
+      valorTotalRam: 600,
+      valorTotalArmazenamento: 600
     },
     {
       id: 6,
@@ -63,7 +83,11 @@ const builds = [
       armazenamento: "2TB NVMe SSD",
       preco: 10500,
       categoria: "Gamer",
-      desempenho: "Muito Alto"
+      desempenho: "Muito Alto",
+      ValorProcessador: 5000,
+      valorPlacaVideo: 5000,
+      valorTotalRam: 250,
+      valorTotalArmazenamento: 250
     },
     {
       id: 7,
@@ -74,7 +98,11 @@ const builds = [
       armazenamento: "256GB SSD",
       preco: 2400,
       categoria: "Escritório",
-      desempenho: "Básico"
+      desempenho: "Básico",
+      ValorProcessador: 1000,
+      valorPlacaVideo: 1000,
+      valorTotalRam: 200,
+      valorTotalArmazenamento: 200
     },
     {
       id: 8,
@@ -85,7 +113,11 @@ const builds = [
       armazenamento: "1TB NVMe SSD",
       preco: 4500,
       categoria: "Estudo/Lazer",
-      desempenho: "Médio"
+      desempenho: "Médio",
+      ValorProcessador: 2000,
+      valorPlacaVideo: 2000,
+      valorTotalRam: 2000,
+      valorTotalArmazenamento: 2000
     },
     {
       id: 9,
@@ -96,7 +128,11 @@ const builds = [
       armazenamento: "4TB NVMe SSD",
       preco: 21000,
       categoria: "Profissional",
-      desempenho: "Extremo"
+      desempenho: "Extremo",
+      ValorProcessador: 10000,
+      valorPlacaVideo:9000 ,
+      valorTotalRam: 10000,
+      valorTotalArmazenamento: 100000
     },
     {
       id: 10,
@@ -107,7 +143,11 @@ const builds = [
       armazenamento: "1TB NVMe SSD",
       preco: 6800,
       categoria: "Geral/Multimídia",
-      desempenho: "Alto"
+      desempenho: "Alto",
+      ValorProcessador: 200,
+      valorPlacaVideo: 2400,
+      valorTotalRam:4000,
+      valorTotalArmazenamento:200
     }
   ]
 
