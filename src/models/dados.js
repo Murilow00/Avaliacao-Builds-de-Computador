@@ -1,4 +1,4 @@
-const buildsPC = [
+const computadores = [
     {
       "id": 1,
       "nomeBuid": "PC Gamer Top de Linha",
@@ -111,4 +111,4 @@ const buildsPC = [
     }
   ]
 
-  export default { buildsPC };
+  export default {computadores};
