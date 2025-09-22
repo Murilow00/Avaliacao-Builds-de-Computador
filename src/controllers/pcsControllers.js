@@ -37,15 +37,27 @@ const getBuildById = (req, res) => {
     });
 };
 
+
+
+
 const criarBuild = (req, res) => {
-    const {nomeBuild, processador, placaVideo, ram, armazenamento, preco, categoria, desempenho, ValorProcessador, valorPlacaVideo, valorTotalRam, valorTotalArmazenamento } = req.body;
+    const {nomeBuild, processador, placaVideo, ram, armazenamento, preco, categoria, desempenho, ValorProcessador, valorPlacaVideo, valorTotalRam, valorTotalArmazenamento, EspacoRam } = req.body;
 
     if(!processador || !ram || !armazenamento || !desempenho){
         return res.status(404).json({
-            sucess: false,
+            success: false,
             message: "Todos os computadores precisam de um processador, memoria Ram, armazenamento e de seu desempenho"
         });
+    };
+
+    if(!EspacoRam%2==0){
+        return res.status(400).json({
+            success: false,
+            message: "O valor da memora ram deve ser uma potencia de 2"
+        })
     }
+
+
 
     const novoPc = {
         id:builds.length + 1,
