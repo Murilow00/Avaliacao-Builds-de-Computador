@@ -1,10 +1,10 @@
-import express from "express";
-import { getAllBuilds } from "../controllers/pcsControllers.js";
+import express from "express"
+import { getAllBuilds, getBuildById,  } from "../controllers/pcsControllers.js"
 
-
-const router = express.Router();
+const router = express.Router()
 
 router.get("/", getAllBuilds);
+router.get("/:id", getBuildById);
 
 
-export default router
+export default router;
