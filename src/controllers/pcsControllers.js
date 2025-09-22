@@ -1,14 +1,23 @@
 import dados from "../models/dados.js";
 const { builds } = dados;
 
+
+
 const getAllBuilds = (req, res) => {
     let resultado = builds;
+    const {categoria} = req.query
+
+    if(categoria){
+        resultado = resultado.filter(a => a.categoria.toLowerCase().includes(categoria.toLowerCase()))
+    }
 
     res.status(200).json({
         total: resultado.length,
-        carros: resultado
+        builds: resultado
     });
 };
+
+
 
 const getBuildById = (req, res) => {
     const id = parseInt(req.params.id);
@@ -18,7 +27,7 @@ const getBuildById = (req, res) => {
     if(!build){
         res.status(404).json({
             sucess: false,
-            messsage: `O carro com id: ${id} não foi encontrado`
+            messsage: `O computador com id: ${id} não foi encontrado`
         });
     };
 
@@ -29,4 +38,4 @@ const getBuildById = (req, res) => {
 };
 
 
-export { getAllBuilds, getBuildById }
+export { getAllBuilds, getBuildById,  }
