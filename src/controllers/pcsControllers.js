@@ -50,7 +50,7 @@ const criarBuild = (req, res) => {
         });
     };
 
-    if(!EspacoRam%2==0){
+    if(EspacoRam%2!=0){
         return res.status(400).json({
             success: false,
             message: "O valor da memora ram deve ser uma potencia de 2"
@@ -157,7 +157,7 @@ const atualizarBuild = (req, res) => {
    const buildEditada = builds.find(b => b.id === idParaEditar)
    return res.status(200).json({
       sucess: true,
-      message: "Os dados do carro foram editados com sucesso",
+      message: "Os dados do computador foram editados com sucesso",
       data: buildEditada
     })
 }
